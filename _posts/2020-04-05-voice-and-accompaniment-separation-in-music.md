@@ -33,7 +33,7 @@ In CV, UNet is used for semantic segmentation.
 Let $X_1(t, f)$ denote Short-Time Discrete Fourier Transform (STFT) of human voice where $t$ and $f$ are time and frequency indices. Let $X_2(t, f)$ denote STFT of accompaniment. Then the music mixture can be described as :
 
 \begin{equation}
-Y(t, f) = X_1(t, f) + X_2(t, f)\tag{abc}
+Y(t, f) = X_1(t, f) + X_2(t, f)\tag{1}
 \end{equation}
 
 
