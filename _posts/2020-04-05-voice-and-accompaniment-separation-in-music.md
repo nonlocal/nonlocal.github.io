@@ -3,11 +3,24 @@
 1. TOC
 {:toc}
 
-Reader is assumed to be familiar with basic construct like CNN, LSTM, Attention, etc.
+This is a review of the paper [Voice and accompaniment separation in music using self-attention convolutional neural network](https://arxiv.org/pdf/2003.08954v1.pdf)
+
+Reader is assumed to be familiar with basic constructs like CNN, LSTM, Attention, etc.
 
 ## Introduction
 
+### Automatic Karoake / Remixing
+Let's say there is a new song release by your favourite musician/artist. 
+1. You want to ~~cry~~sing your heart out to it but you only need the music from that song, you want to sing the lyrics yourself. What do you do? 
+2. Let's say you are an up-and-coming DJ. You want to keep the original lyrics of the singer in the song as is, but you want to add/mix your own music to show off to your audience.
+
+
 ## Problem
+
+How do you do it? How do you separate music from lyrics or vice-versa?
+
+In general, how do you separate _one_ source of voice from _another_? 
+
 
 ## Solution
 
