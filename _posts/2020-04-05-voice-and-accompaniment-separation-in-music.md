@@ -30,7 +30,7 @@ In general, how do you separate _one_ source of voice from _another_?
 ### Dense-UNet voice and accompaniment separation
 In CV, UNet is used for semantic segmentation.
 
-Let $X_1(t, f)$ denote Short-Time Discrete Fourier Transform (STFT) of human voice where $t$ and $f$ are time and frequency indices. Let X_2(t, f) denote STFT of accompaniment. Then the music mixture can be described as :
+Let $X_1(t, f)$ denote Short-Time Discrete Fourier Transform (STFT) of human voice where $t$ and $f$ are time and frequency indices. Let $X_2(t, f)$ denote STFT of accompaniment. Then the music mixture can be described as :
 
 \begin{equation}
 Y(t, f) = X_1(t, f) + X_2(t, f)\tag{abc}
