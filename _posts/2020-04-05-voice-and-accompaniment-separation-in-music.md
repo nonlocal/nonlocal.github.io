@@ -12,7 +12,7 @@ Reader is assumed to be familiar with basic constructs like CNN, LSTM, Attention
 ### Automatic Karoake / Remixing
 Let's say there is a new song released by one of your favourite musician/artist. 
 1. You want to ~~cry~~ sing your heart out to it but you only need the music from that song, you want to sing the lyrics yourself. What do you do? 
-2. Let's say you are an up-and-coming DJ. You want to keep the original lyrics of the singer in the song as is, but you want to add/mix your own music to show off to your audience. #BowChickaWowWow.
+2. Let's say you are an up-and-coming DJ. You want to keep the original lyrics of the singer in the song as is, but you want to add/mix your own music to show off to your audience.
 
 
 ## Problem
