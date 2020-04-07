@@ -1,5 +1,3 @@
-## About me
-
 Hi,
 
 I am Nilesh Chaudhari. 
