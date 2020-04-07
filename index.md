@@ -1,6 +1,14 @@
+## About me
+
 Hi,
 
-I am Nilesh Chaudhari. I have graduated with Bachelor's in Tech from IIT Guwahati. I have been working in the field of Data Science/Machine Learning/Artificial Intelligence since last few years. I have had mutliple titles so far: **Data Scientist**, **Machine Learning Engineer**, **Senior Data Scientist**, **NLP Engineer**, etc, etc. I go by [@nonlocal](https://github.com/nonlocal/) and [@psds01](https://github.com/psds01) on GitHub and blog on [here](https://nonlocal.github.io/) and [here](http://psds01.github.io). 
+I am Nilesh Chaudhari. 
+
+I have graduated with Bachelor's in Tech from IIT Guwahati.
+
+I have been working in the field of Data Science/Machine Learning/Artificial Intelligence since last four years. I have had mutliple titles so far: **Data Scientist**, **Machine Learning Engineer**, **Senior Data Scientist**, **NLP Engineer**, etc, etc. 
+
+
 
 I describe myself as someone who works with data and creates solutions that businesses use. For that purpose, I often employ:
 1. Software engineering
@@ -10,8 +18,6 @@ I describe myself as someone who works with data and creates solutions that busi
 
 
 
-## This is a title
+## Blogging
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
-
-checking access
+I go by [@nonlocal](https://github.com/nonlocal/) and [@psds01](https://github.com/psds01) on GitHub and blog on [here](https://nonlocal.github.io/) and [here](http://psds01.github.io). 
