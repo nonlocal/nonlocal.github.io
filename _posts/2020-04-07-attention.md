@@ -25,7 +25,7 @@ You should be able to understand [this image](https://miro.medium.com/max/1400/1
 
 ## Introduction
 
-In this blog, we will review the original attention mechanism as published in [Bahdanau et. al.](https://arxiv.org/pdf/1409.0473.pdf).
+In this blog, we will review the original attention mechanism as published in [Bahdanau et. al.](https://arxiv.org/pdf/1409.0473.pdf)
 
 <!--and we will also give another example of attention known as "self-attention".-->
 
@@ -146,6 +146,6 @@ Let's take an example of Machine Translation from English to Spanish. Let's say 
 -->
 
 
-This is a developed in collaboration with [@mandalbiswadip](https://github.com/mandalbiswadip) 
+This is developed in collaboration with [@mandalbiswadip](https://github.com/mandalbiswadip) 
 
 
