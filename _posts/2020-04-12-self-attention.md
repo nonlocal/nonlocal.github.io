@@ -8,6 +8,9 @@ Let me illustrate.
 
 ## Graphical Representation of Self Attention
 
-![](/images/Attention.jpg "Figure 1: Self-attention mechanism to calculate context vector for the first sequence element.")
+![](/images/Attention.jpg)
+*Figure 1: Self-attention mechanism to calculate context vector for the first sequence element.*
 {: style="text-align: center;"}
 
+
+## Explanation
