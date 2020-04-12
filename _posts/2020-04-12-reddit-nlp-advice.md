@@ -1,4 +1,4 @@
-# Can Machines Use Language in *Real World<sup>TM</sup>*
+# Can Machines Use Language in the Real World
 
 
 
