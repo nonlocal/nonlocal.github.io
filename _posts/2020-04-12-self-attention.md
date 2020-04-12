@@ -7,5 +7,5 @@ In this blog, we are going to review another type of attention mechanism, where 
 Let me illustrate. 
 
 ![](/images/Attention.jpg "Self Attention")
-*Figure 1: Self-attention mechanism to calculate context vector for the first sequence element.*
+*Figure 1: Self-attention.*
 {: style="text-align: center;"}
