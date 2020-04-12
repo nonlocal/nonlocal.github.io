@@ -8,7 +8,6 @@ Let me illustrate.
 
 ## Graphical Representation of Self Attention
 
-![](/images/Attention.jpg "Self Attention")
-*Figure 1: Self-attention mechanism .*
+![](/images/Attention.jpg "Figure 1: Self-attention mechanism to calculate context vector for the first sequence element.")
 {: style="text-align: center;"}
 
