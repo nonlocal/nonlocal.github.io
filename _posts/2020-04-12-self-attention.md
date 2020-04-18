@@ -58,7 +58,7 @@ c_i = \sum_{j=1}^{n} a_{ij}h_j
 Steps (1) through (7) show us how to calculate self attention vectors for a given sequence. Along with the RNN hidden states, we use these context vectors to provide some extra information to the next layer.
 
 Here, RNN as a sequence model is not really necessary. We could use a CNN or just a fully connected layer instead of an RNN. The outputs of this layer for each sequence element will be used to calculate the context vectors.
-Let $L$ be either a 1D-CNN or an FC layer.
+Let $L$ be either a 1D-CNN or an FC layer or any layer which takes in $x$ and gives another vector.
 
 1. Input: $X = (x_1, x_2, x_3, ..., x_n)$
 2. $H = (h_1, h_2, h_3, ..., h_n) = L(X) = (L(x_1), L(x_2), L(x_3), ..., L(x_n))$
