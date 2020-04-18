@@ -34,4 +34,6 @@ Let's take a closer look at the image above and try to understand what is going 
     Let's calculate the attention vector $c_1$. The same process can be applied to calculate the rest of the attention/context vectors. The process followed is as described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog.
 
     a. The hidden state $h_1$ is shared across all timesteps of the sequence as can be seen in the <span style="color:blue">blue colored arrows</span>.
-    b. 
+    b. For each timestep, we now have two vectors: the hidden state of that timestep and this _shared_ hidden state.
+    c. With these two vectors as inputs to the function $f$, we get a score $e$. This can be seen in the rectangle which has the function $f$ inside it with two inputs: $h_1$ and the hidden state at each timestep.
+    
