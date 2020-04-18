@@ -46,3 +46,4 @@ Let's take a closer look at the image above and try to understand what is going 
     \begin{equation}
     c_1 = \sum_{j=1}^{n} a_{1j}h_j
     \end{equation}
+6. Similarly, we can obtain $c_2, c_3, ..., c_n$.
