@@ -30,8 +30,7 @@ Let's take a closer look at the image above and try to understand what is going 
 2. Specifically here, we are using an RNN to model the sequence $X$. This argument/approach is general though. (Will take another example below without the RNN as sequence model).
 3. The initial hidden state of the RNN is $h_0$ and for each element of $X$, the RNN outputs a sequence of hidden states $H = (h_1, h_2, h_3, ..., h_n)$.
 4. For each hidden state given by the RNN, the attention model calculates an attention/context vector, $C = (c_1, c_2, c_3, ..., c_n)$ and concatenates it with its corresponding hidden state. The concatenated (hidden state and context vector) serves as the input to the next layer: $X^{next} = conc(H, C) = ([h_1, c_1], [h_2, c_2], [h_3, c_3], ..., [h_n, c_n])$.
-
-    Let's calculate the attention vector $c_1$. The same process can be applied to calculate the rest of the attention/context vectors. The process followed is as described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog.
+5. Let's calculate the attention vector $c_1$. The same process can be applied to calculate the rest of the attention/context vectors. The process followed here is described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog.
 
     1. The hidden state $h_1$ is shared across all timesteps of the sequence as can be seen in the <span style="color:blue">blue colored arrows</span>.
     
@@ -39,6 +38,4 @@ Let's take a closer look at the image above and try to understand what is going 
     
     3. With these two vectors as inputs to the function $f$, we get a score $e$. This can be seen in the rectangle which has the function $f$ inside it with two inputs: $h_1$ and the hidden state at that timestep. 
     
-    4. To illustrate further, we get the score $e_{11}$ as a function of the shared hidden state (which is $h_1$) and the hidden state $h_1$ : $f(h_1, h_1)$.
-    
-    Similarly, $e_{12} = f(h_1, h_2)$, $e_{13} = f(h_1, h_3)$, ..., $e_{14} = f(h_1, h_n)$.
+    4. To illustrate further, we get the score $e_{11}$ as a function of the shared hidden state (which is $h_1$) and the hidden state $h_1$ : $f(h_1, h_1)$. Similarly, $e_{12} = f(h_1, h_2)$, $e_{13} = f(h_1, h_3)$, ..., $e_{14} = f(h_1, h_n)$.
