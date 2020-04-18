@@ -40,4 +40,9 @@ Let's take a closer look at the image above and try to understand what is going 
     
     4. To illustrate further, we get the score $e_{11}$ as a function of the shared hidden state (which is $h_1$) and the hidden state $h_1$ : $f(h_1, h_1)$. Similarly, $e_{12} = f(h_1, h_2)$, $e_{13} = f(h_1, h_3)$, ..., $e_{14} = f(h_1, h_n)$.
     
-    5. Once we have all the $e_{ij}$ for $j \in [1, len(X)]$, we take softmax over them to get $a_{1j}$
+    5. Once we have $e_{11}, e_{12}, e_{13}, ..., e_{1n}$, we take softmax over them to get $a_{11}, a_{12}, a_{13}, ..., a_{1n}$.
+    
+    6. with $a_1j$ as weight for $h_j$, we take the expectation of all the hiddens states to obtain the context vector: 
+    \begin{equation}
+    c_1 = \sum_{j=1}^{n} a_{ij}h_j
+    \end{equation}
