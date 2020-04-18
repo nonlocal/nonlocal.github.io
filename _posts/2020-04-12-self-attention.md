@@ -37,10 +37,8 @@ Let's take a closer look at the image above and try to understand what is going 
     
     2. For each timestep, we now have two vectors: the hidden state of that timestep and this _shared_ hidden state.
     
-    3. With these two vectors as inputs to the function $f$, we get a score $e$. This can be seen in the rectangle which has the function $f$ inside it with two inputs: $h_1$ and the hidden state at each timestep. 
+    3. With these two vectors as inputs to the function $f$, we get a score $e$. This can be seen in the rectangle which has the function $f$ inside it with two inputs: $h_1$ and the hidden state at that timestep. 
     
-    4.To illustrate further.
+    4. To illustrate further, we get the score $e_{11}$ as a function of the shared hidden state (which is $h_1$) and the hidden state $h_1$ : $f(h_1, h_1)$.
     
-    
-    
-    
+    Similarly, $e_{12} = f(h_1, h_2)$, $e_{13} = f(h_1, h_3)$, ..., $e_{14} = f(h_1, h_n)$.
