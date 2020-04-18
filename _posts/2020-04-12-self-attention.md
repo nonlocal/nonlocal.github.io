@@ -51,3 +51,15 @@ Let's take a closer look at the image above and try to understand what is going 
 c_i = \sum_{j=1}^{n} a_{ij}h_j
 \end{equation}
 7. For each hidden state $h_i$ given by the RNN, we now have an attention/context vector $c_i$ given by the attention model. We concatenate the hidden state and the context vector at each timestep and feed that as input to the next layer: $X^{next} = conc(H, C) = ([h_1, c_1], [h_2, c_2], [h_3, c_3], ..., [h_n, c_n])$.
+
+
+## Conclusion
+
+Steps (1) through (7) show us how to calculate self attention vectors for a given sequence. Along with the RNN hidden states, we use these context vectors to provide some extra information to the next layer.
+
+Here, RNN as a sequence model is not really necessary. We could use a CNN or just a fully connected layer instead of an RNN. The outputs of this layer for each sequence element will be used to calculate the context vectors.
+Let $L$ be either a 1D-CNN or an FC layer.
+
+1. Input: $X = (x_1, x_2, x_3, ..., x_n)$
+2. $H = (h_1, h_2, h_3, ..., h_n) = f(X) = (f(x_1), f(x_2), f(x_3), ..., f(x_n))$
+3. $C = (c_1, c_2, c_3, ..., c_n) = (\sum_{j=1}^{n} a_{1j}h_j, \sum_{j=1}^{n} a_{2j}h_j, \sum_{j=1}^{n} a_{3j}h_j, ..., \sum_{j=1}^{n} a_{nj}h_j)$
