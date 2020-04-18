@@ -44,5 +44,5 @@ Let's take a closer look at the image above and try to understand what is going 
     
     6. with $a_1j$ as weight for $h_j$, we take the expectation of all the hiddens states to obtain the context vector: 
     \begin{equation}
-    c_1 = \sum_{j=1}^{n} a_{ij}h_j
+    c_1 = \sum_{j=1}^{n} a_{1j}h_j
     \end{equation}
