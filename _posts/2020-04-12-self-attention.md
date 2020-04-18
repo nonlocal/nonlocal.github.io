@@ -42,7 +42,7 @@ Let's take a closer look at the image above and try to understand what is going 
     
     5. Once we have $e_{11}, e_{12}, e_{13}, ..., e_{1n}$, we take softmax over them to get $a_{11}, a_{12}, a_{13}, ..., a_{1n}$.
     
-    6. with $a_1j$ as weight for $h_j$, we take the expectation of all the hiddens states to obtain the context vector: 
+    6. with $a_{1j}$ as weight for $h_j$, we take the expectation of all the hiddens states to obtain the context vector: 
     \begin{equation}
     c_1 = \sum_{j=1}^{n} a_{1j}h_j
     \end{equation}
