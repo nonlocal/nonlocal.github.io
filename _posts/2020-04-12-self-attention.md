@@ -3,7 +3,7 @@
 1. TOC
 {:toc}
 
-## prerequisite
+## Prerequisite
 
 Please read this post before moving ahead: [attention in simple terms](https://nonlocal.github.io/2020/04/07/attention.html)
 
