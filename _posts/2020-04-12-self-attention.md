@@ -45,7 +45,7 @@ Let's take a closer look at the image above and try to understand what is going 
     \begin{equation}
     c_1 = \sum_{j=1}^{n} a_{1j}h_j
     \end{equation}
-5. Similarly, we can obtain $c_2, c_3, ..., c_n$ by repeating above Step(4) where the shared hidden state would be $h_2, h_3, ..., h_n$ resp.
+5. Similarly, we can obtain $c_2, c_3, ..., c_n$ by repeating above Step(4) where the shared hidden state would be $h_2, h_3, ..., h_n$ resp. This gives us a sequence of context vectors $C = (c_1, c_2, c_3, ..., c_n)$.
 6. The generic formula to get the context vector for the $i^{th}$ timestep is: 
 \begin{equation}
 c_i = \sum_{j=1}^{n} a_{ij}h_j
