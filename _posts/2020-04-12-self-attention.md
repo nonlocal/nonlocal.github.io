@@ -27,7 +27,7 @@ Let me illustrate.
 Let's take a closer look at the image above and try to understand what is going on.
  
 1. We have a sequence of inputs $X = (x_1, x_2, x_3, ..., x_n)$.
-2. Specifically here, we are using an RNN to model the sequence $X$. This argument/approach is general though. (Will take another example below without the RNN as sequence model).
+2. Specifically here, we are using an RNN to model the sequence $X$. This argument/approach is general though.
 3. The initial hidden state of the RNN is $h_0$ and for $X$, the RNN outputs $H$, a sequence of hidden states $(h_1, h_2, h_3, ..., h_n)$ corresponding to each element of $X$.
 4. Let's calculate the attention/context vector $c_1$ for the first timestep. The same process can be applied to calculate the rest of the attention/context vectors. The process followed here is described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog.
 
