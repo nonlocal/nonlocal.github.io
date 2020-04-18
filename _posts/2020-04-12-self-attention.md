@@ -16,7 +16,7 @@ In this blog, we are going to review another type of attention mechanism, where 
 
 Let me illustrate. 
 
-## Graphical Representation of Self Attention
+## Graphical Representation
 
 ![](/images/Attention.jpg)
 *Figure 1: Self-attention mechanism to calculate context vector for the first sequence element.*
@@ -29,7 +29,7 @@ Let's take a closer look at the image above and try to understand what is going 
 1. We have a sequence of inputs $X = (x_1, x_2, x_3, ..., x_n)$.
 2. Specifically here, we are using an RNN to model the sequence $X$. This argument/approach is general though. (Will take another example below without the RNN as sequence model).
 3. The initial hidden state of the RNN is $h_0$ and for each element of $X$, the RNN outputs a sequence of hidden states $H = (h_1, h_2, h_3, ..., h_n)$.
-4. For each hidden state given by the RNN, the attention model calculates an attention/context vector, $C = (c_1, c_2, c_3, ..., c_n)$ and concatenates it with its corresponding hidden state which serves as input to the next layer.
+4. For each hidden state given by the RNN, the attention model calculates an attention/context vector, $C = (c_1, c_2, c_3, ..., c_n)$ and concatenates it with its corresponding hidden state. The concatenated (hidden state and context vector) serves as the input to the next layer: $X^{next_layer} = conc(H, C) = ([h_1, c_1], [h_2, c_2], [h_3, c_3], ..., [h_n, c_n])$.
 
     Let's calculate the attention vector $c_1$. The same process can be applied to calculate the rest of the attention/context vectors. The process followed is as described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog
 
