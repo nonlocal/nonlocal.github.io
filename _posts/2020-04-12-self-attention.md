@@ -29,8 +29,7 @@ Let's take a closer look at the image above and try to understand what is going 
 1. We have a sequence of inputs $X = (x_1, x_2, x_3, ..., x_n)$.
 2. Specifically here, we are using an RNN to model the sequence $X$. This argument/approach is general though. (Will take another example below without the RNN as sequence model).
 3. The initial hidden state of the RNN is $h_0$ and for each element of $X$, the RNN outputs $H$, a sequence of hidden states $(h_1, h_2, h_3, ..., h_n)$.
-4. For each hidden state given by the RNN, the attention model calculates an attention/context vector, $C = (c_1, c_2, c_3, ..., c_n)$ and concatenates it with its corresponding hidden state. The concatenated (hidden state and context vector) serves as the input to the next layer: $X^{next} = conc(H, C) = ([h_1, c_1], [h_2, c_2], [h_3, c_3], ..., [h_n, c_n])$.
-5. Let's calculate the attention vector $c_1$. The same process can be applied to calculate the rest of the attention/context vectors. The process followed here is described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog.
+4. Let's calculate the attention/context vector $c_1$ for the first timestep. The same process can be applied to calculate the rest of the attention/context vectors. The process followed here is described in [this blog](https://nonlocal.github.io/2020/04/07/attention.html). Please make sure you have understood it. It's THE prerequisite for this blog.
 
     1. The hidden state $h_1$ is shared across all timesteps of the sequence as can be seen in the <span style="color:blue">blue colored arrows</span>.
     
@@ -46,8 +45,9 @@ Let's take a closer look at the image above and try to understand what is going 
     \begin{equation}
     c_1 = \sum_{j=1}^{n} a_{1j}h_j
     \end{equation}
-6. Similarly, we can obtain $c_2, c_3, ..., c_n$ by repeating above Step(5) where the shared hidden state $h_2, h_3, ..., h_n$ resp.
-7. The generic formula is to get the context vector for the $i^{th}$ timestep is: 
+5. Similarly, we can obtain $c_2, c_3, ..., c_n$ by repeating above Step(4) where the shared hidden state $h_2, h_3, ..., h_n$ resp.
+6. The generic formula is to get the context vector for the $i^{th}$ timestep is: 
 \begin{equation}
 c_i = \sum_{j=1}^{n} a_{ij}h_j
 \end{equation}
+7. For each hidden state given by the RNN, now we have an attention/context vector, $C = (c_1, c_2, c_3, ..., c_n)$ as giveb by the attention model (the function $f$). Let's concatenate it with its corresponding hidden state. The concatenated (hidden state and context vector) serves as the input to the next layer: $X^{next} = conc(H, C) = ([h_1, c_1], [h_2, c_2], [h_3, c_3], ..., [h_n, c_n])$.
