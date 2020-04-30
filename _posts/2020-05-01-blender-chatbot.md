@@ -1,4 +1,4 @@
-# Review of the Blender chatbot paper
+# The Blender Chatbot
 
 Please find the paper here : [Recipes for building an open-domain chatbot](https://arxiv.org/pdf/2004.13637.pdf)
 
