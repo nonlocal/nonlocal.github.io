@@ -6,7 +6,7 @@ I am Nilesh Chaudhari.
 
 I have graduated with Bachelor of Technology (BTech) from IIT Guwahati.
 
-I have been working in the field of Data Science/Machine Learning/Artificial Intelligence since last four years. I have had mutliple titles so far: **Data Scientist**, **Machine Learning Engineer**, **Senior Data Scientist**, **NLP Engineer**, etc, etc. 
+I have been working in the field of Data Science/Machine Learning/Artificial Intelligence since last 4+ years. I have had mutliple titles so far: **Data Scientist**, **Machine Learning Engineer**, **Senior Data Scientist**, **NLP Engineer**, etc, etc. 
 
 
 
