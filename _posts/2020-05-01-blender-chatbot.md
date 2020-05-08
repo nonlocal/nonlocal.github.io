@@ -1,5 +1,9 @@
 # The Blender Chatbot
 
+1. TOC
+{:toc}
+
+
 Please find the paper here : [Recipes for building an open-domain chatbot](https://arxiv.org/pdf/2004.13637.pdf)
 
 I am extremely curious about reviewing this paper. I have had a lot of bruises building chatbots for my [current company](https://www.gopaysense.com/). I have noticed a few thing about building chatbots in _The Real World&trade;_. 
@@ -16,6 +20,31 @@ For example:
 
 
 One counter-intuitive application would be the usage of this chatbot for a closed domain : train the bot in the "open domain" setting but use it for a very specific purpose eg booking an airline ticket, checking up on the health of a patient, banking, paying bills etc just to name a few.
+
+
+## Model Architecture
+1. Retrieval
+2. Generative
+3. Retrieve And Refine
+
+### Retrieval
+
+Dialogue history as input. The model predicts the next utterance by scoring a large set of candidate responses. 
+
+
+### Generator
+
+Seq2Seq Transformer is used to generate responses as opposed to choosing from a fixed set.
+
+### Retrieve And Refine
+
+Generative models often produce dull and repetitive responses. The solution is to add a retrieval step before generation.
+
+#### Dialogue Retrieval
+The Retrieval model above is used to retrieve a response. This response along with the dialogue history is fed to the generator model above to generate a response.
+
+#### Knowledge Retrieval
+Instead of retriving a response from a set of reponses, we retrieve from a large knowledge base. Then the dialogue history along with this retrived knowledge is fed to the generator model to generate a response. 
 
 
 
