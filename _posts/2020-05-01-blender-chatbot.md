@@ -48,7 +48,48 @@ The Retrieval model above is used to retrieve a response. This response along wi
 Instead of retriving a response from a set of reponses, we retrieve from a large knowledge base. Then the dialogue history along with this retrived knowledge is fed to the generator model to generate a response. 
 
 
+## Training
 
+### Retrieval
+
+Some special cross entropy loss
+
+### Generator
+
+Maximum Likelihood Estimation
+
+
+### Retrieve And Refine
+
+For this model, simply appending the retrieval model responses to generator model input and training it with MLE does not work. (Why?) Because R&R model learns to ignore the output of the retrieval model. Instead there is some blending between retrieval response and gold response. (This blending is used only for Dialogue based R&R model.)
+
+### Unlikelihood Training
+
+To address the failures of training models, include unlikelihood loss as well.
+
+In this case the total loss is likelihood loss + unlikelihood loss.
+
+Likelihood loss optimizes for the given probabilty distribution and unlikelihood loss corrects the biases.
+
+
+## Decoding
+
+### Beam Search
+
+
+### Sampling
+Restrict sampling of vocabulary to a subset using a model.
+1. Top K Sampling
+2. Sample and Rank
+
+### Response length
+#### Minimum length
+Do not generate the <END> token until the minimum sequence length is achieved.
+  
+#### Predictive length
+Predict the length of the response. Train on human-to-human conversational data to predict the length of the next response : < 10, < 20,< 30 and > 30 tokens. The architecture for this 4 way classification is same as retrieval model.   
+
+#### Subsequence blocking
 
 Questions:
 1. Minimum length constrain implementation : sub-sampling the vocab without the <END> token until we have sampled a sequence of length L-1??
