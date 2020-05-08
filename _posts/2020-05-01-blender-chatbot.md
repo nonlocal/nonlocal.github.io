@@ -1,8 +1,5 @@
 # The Blender Chatbot
 
-1. TOC
-{:toc}
-
 
 Please find the paper here : [Recipes for building an open-domain chatbot](https://arxiv.org/pdf/2004.13637.pdf)
 
@@ -20,6 +17,10 @@ For example:
 
 
 One counter-intuitive application would be the usage of this chatbot for a closed domain : train the bot in the "open domain" setting but use it for a very specific purpose eg booking an airline ticket, checking up on the health of a patient, banking, paying bills etc just to name a few.
+
+1. TOC
+{:toc}
+
 
 
 ## Model Architecture
@@ -52,3 +53,5 @@ Instead of retriving a response from a set of reponses, we retrieve from a large
 Questions:
 1. Minimum length constrain implementation : sub-sampling the vocab without the <END> token until we have sampled a sequence of length L-1??
 2. 
+
+
