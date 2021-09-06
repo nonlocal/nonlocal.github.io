@@ -1,4 +1,4 @@
-# A Visaul Explanation of Self Attention 
+# A Visual Explanation of Self Attention 
 
 1. TOC
 {:toc}
